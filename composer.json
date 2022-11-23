@@ -1,0 +1,33 @@
+{
+	"name": "ansjabar/laravel-agora-token",
+	"description": "Generate Agora authentication token",
+    "keywords": ["laravel", "agora-token"],
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Ans Jabar",
+            "email": "ans.jabar@gmail.com"
+        }
+	],
+    "support": {
+        "issues": "https://github.com/ansjabar/laravel-agora-token/issues",
+        "source": "https://github.com/ansjabar/laravel-agora-token"
+    },
+	"require": {
+		"php": "^7.0|^8.0",
+		"monolog/monolog": "^1.23|^2.0"
+	},
+	"require-dev": {
+		"ext-curl": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"AnsJabar\\LaravelAgoraToken\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [ "AnsJabar\\LaravelAgoraToken\\AgoraServiceProvider" ]
+		}
+	}
+}
